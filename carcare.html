@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan Car Care - Mitsubishi Body and Paint</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18;
+}
+        .navbar {
+    background-color: #333;
+}
+.navbar-brand {
+    font-weight: bold;
+    color: #fff;
+}
+.navbar-brand:hover {
+    color: #fff;
+}
+.nav-link {
+    color: #ccc !important;
+    margin-right: 15px;
+}
+.nav-link:hover {
+    color: #fff !important;
+}
+.btn-cta {
+    background-color: #ff4d4d;          
+    color: #fff;
+    border-radius: 20px;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+}
+.btn-cta:hover {
+    background-color: #e63946;
+}
+        /* Styling section */
+        .car-care-section {
+            padding: 60px 0;
+            background-color: #f7f8fa;
+        }
+        .car-care-section h2 {
+            font-weight: bold;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .service-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        .service-card i {
+            font-size: 40px;
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+        .service-card h5 {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .service-card p {
+            color: #555;
+        }
+        .service-btn {
+            color: #007bff;
+            text-decoration: underline;
+        }
+       /* Teks dan ikon sosial media */
+/* Style dasar footer */
+.footer {
+    background-color: #333;
+    color: #ffffff;
+    padding: 40px 0;
+}
+/* Ikon kontak */
+.footer .contact-info i {
+    font-size: 1.2rem;
+    color: #ffc107;
+    transition: color 0.3s ease;
+}
+/* Animasi hover ikon */
+.footer .contact-info i:hover {
+    color: #ffffff;
+}
+/* Teks dan ikon sosial media */
+.footer a {
+    color: #ffc107;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer a:hover {
+    color: #ffffff;
+}
+    </style>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <!-- Brand/Logo -->
+            <a class="navbar-brand" href="index.html"> Bodi&Cat</a>
+
+            <!-- Toggler for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Tim Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Layanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Kontak & Alamat</a>
+                    </li>
+                    <!-- Dropdown Menu khusus untuk Karir dan Testimoni -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Lainnya
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="carcare.html">Layanan Car Care</a></li>
+                            <li><a class="dropdown-item" href="mitra&kerjasama.html">Mitra & Kerja Sama</a></li>
+                            <li><a class="dropdown-item" href="gallerservis.html">Gallery Service</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Layanan Car Care Section -->
+    <section id="car-care" class="car-care-section">
+        <div class="container p-4">
+            <h2>Layanan Car Care</h2>
+
+            <div class="row">
+                <!-- Service Item 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="service-card text-center p-4">
+                        <i class="bi bi-droplet-half">🔧💧✨</i> <!-- Ikon -->
+                        <h5>Engine Dressing</h5>
+                        <p>Memelihara kebersihan ruang mesin dari kotoran serta oli dan diberikan lapisan
+                            dressing serta antirat untuk memelihara kabel-kabel dari gigitan tikus.
+                        </p>
+                        <button class="btn service-btn" onclick="showServiceDetail('Engine Dressing')">Lihat Detail</button>
+                    </div>
+                </div>
+                <!-- Service Item 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="service-card text-center p-4">
+                        <i class="bi bi-flower3">🧼✨💧</i> <!-- Ikon -->
+                        <h5>Glass Cleaning & Coating</h5>
+                        <p>Menghilangkan jamur kaca akibat endapan air dan kotoran serta diberi lapisan Coating
+                            untuk meminimalisir timbulnya jamur(efek hydropobic)
+                        </p>
+                        <button class="btn service-btn" onclick="showServiceDetail('Glass cleaning & Coating')">Lihat Detail</button>
+                    </div>
+                </div>
+                <!-- Service Item 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="service-card text-center p-4">
+                        <i class="bi bi-brightness-alt-high">🧽🚗✨</i> <!-- Ikon -->
+                        <h5>Interior Detailing</h5>
+                        <p>Membersihkan kotoran dan noda pada interior mobil dan menghilangkan bau tidak sedap pada kabin 
+                            (jok,trim,plafon,dashboard)
+                        </p>
+                        <button class="btn service-btn" onclick="showServiceDetail('Interior Detailing')">Lihat Detail</button>
+                    </div>
+                </div>
+
+                <!-- Service Item 4 -->
+                <div class="col-md-4 mb-4">
+                    <div class="service-card text-center p-4">
+                        <i class="bi bi-shield">🚗✨</i> <!-- Ikon -->
+                        <h5>Poles Body & Nano Coating</h5>
+                        <p>Poles body(2 step) untuk menghilangkan baret halus dan diberi lapian nano coating untuk
+                            memberikan proteksi pada cat mobil agar selalu mengkilap
+                        </p>
+                        <button class="btn service-btn" onclick="showServiceDetail('Poles Body & Nano Coating')">Lihat Detail</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Service Details -->
+    <div class="modal fade" id="serviceDetailModal" tabindex="-1" aria-labelledby="serviceDetailModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="serviceDetailModalLabel">Detail Layanan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="serviceDetailContent">
+                    <!-- Detail Layanan akan dimasukkan secara dinamis di sini -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer mt-auto py-4">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <!-- Kolom logo dan deskripsi singkat -->
+                <div class="col-md-4 mb-4" id="kontak">
+                    <h5 class="text-uppercase mb-3">Mitsubishi Body & Paint</h5>
+                    <p>Solusi terbaik untuk perawatan dan pemulihan kendaraan Anda. Kami siap membantu Anda menjaga kualitas dan tampilan kendaraan Anda tetap prima.</p>
+                </div>
+    
+                <!-- Kolom kontak -->
+                <div class="col-md-4 mb-4 contact-info">
+                    <h5 class="text-uppercase mb-3">Kontak Kami</h5>
+                    <p><i class="fas fa-phone-alt me-2"></i> <a href="tel:+62000000000">+62 000 0000 0000</a></p>
+                    <p><i class="fas fa-envelope me-2"></i> <a href="mailto:info@example.com">info@example.com</a></p>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> Jl. Contoh Alamat No.123, Jakarta</p>
+                </div>
+    
+                <!-- Kolom media sosial -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-uppercase mb-3">Ikuti Kami</h5>
+                    <div class="d-flex justify-content-center justify-content-md-start">
+                        <a href="#" class="me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Footer bawah -->
+            <div class="text-center mt-3">
+                <p class="mb-0">&copy; 2024 Mitsubishi Body & Paint. Semua Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap dan Custom JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Function to display service details dynamically in modal
+        function showServiceDetail(serviceName) {
+            const serviceDetailContent = {
+                'Cuci Mobil Eksterior': 'Layanan cuci eksterior menggunakan bahan ramah lingkungan untuk menjaga kilau kendaraan Anda.',
+                'Detailing Interior': 'Membersihkan setiap sudut interior mobil untuk kenyamanan berkendara yang lebih baik.',
+                'Waxing & Polishing': 'Memberikan perawatan wax dan poles untuk hasil maksimal pada cat mobil.',
+                'Pelindung Cat': 'Melindungi cat mobil dari goresan, debu, dan cuaca yang ekstrim.',
+                'Pembersihan Mesin': 'Membersihkan mesin dari kotoran yang menempel untuk performa mesin yang optimal.',
+                'Anti Karat': 'Pelapisan anti karat yang melindungi bagian bawah dan dalam bodi mobil Anda.'
+            };
+
+            // Set modal title and content dynamically
+            document.getElementById('serviceDetailModalLabel').innerText = serviceName;
+            document.getElementById('serviceDetailContent').innerText = serviceDetailContent[serviceName] || 'Detail layanan tidak tersedia.';
+
+            // Show the modal
+            const serviceDetailModal = new bootstrap.Modal(document.getElementById('serviceDetailModal'));
+            serviceDetailModal.show();
+        }
+    </script>
+</body>
+</html>

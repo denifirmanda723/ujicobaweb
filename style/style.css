@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+  }
+   
+  body {
+    font-family: 'Quicksand', sans-serif;
+   
+    margin: 0;
+    padding: 0;
+  }
+   
+  h2,
+  h3 {
+    color: black;
+  }
+   
+  footer {
+    padding: 20px;
+    color: black;
+    background-color:rgba(10, 14, 238, 0.856);
+   
+    text-align: center;
+    font-weight: bold;
+  }
+  .navbar {
+    background-color: #333;
+}
+.navbar-brand {
+    font-weight: bold;
+    color: #fff;
+}
+.navbar-brand:hover {
+    color: #fff;
+}
+.nav-link {
+    color: #ccc !important;
+    margin-right: 15px;
+}
+.nav-link:hover {
+    color: #fff !important;
+}
+.btn-cta {
+    background-color: #ff4d4d;          
+    color: #fff;
+    border-radius: 20px;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+}
+.btn-cta:hover {
+    background-color: #e63946;
+}
+   
+  .profile header {
+    text-align: center;
+  }
+   
+  .featured-image {
+    width: 100%;
+    max-height: 300px;
+   
+    object-fit: cover;
+    object-position: center;
+  }
+   
+  .profile img {
+    max-width: 200px;
+  }
+   
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+   
+    padding: 20px;
+  }
+   
+  .jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: rgba(10, 14, 238, 0.329);;
+    text-align: center;
+    color:black;
+  }
+   
+  .navbar {
+    background-color: #333;
+}
+.navbar-brand {
+    font-weight: bold;
+    color: #fff;
+}
+.navbar-brand:hover {
+    color: #fff;
+}
+.nav-link {
+    color: #ccc !important;
+    margin-right: 15px;
+}
+.nav-link:hover {
+    color: #fff !important;
+}
+.btn-cta {
+    background-color: #ff4d4d;          
+    color: #fff;
+    border-radius: 20px;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+}
+.btn-cta:hover {
+    background-color: #e63946;
+}
+  main {
+    padding: 20px;
+   
+    display: flex;
+    gap: 1.5rem;
+  }
+   
+  #content {
+    flex: 5;
+   
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+  }
+   
+  aside {
+    flex: 1;
+  }
+   
+  header {
+    display: inline;
+  }
+   
+  /* Perangkat dengan lebar layar 1200px dan di bawahnya */
+  @media screen and (max-width: 1200px) {
+    main {
+      flex-flow: column nowrap;
+    }
+   
+    main aside {
+      align-self: center;
+    }
+  }
+   
+  /* Perangkat dengan lebar layar 768px dan di bawahnya */
+  @media screen and (max-width: 768px) {
+    nav ul {
+      justify-content: center;
+    }
+   
+    main aside {
+      align-self: stretch;
+    }
+  }

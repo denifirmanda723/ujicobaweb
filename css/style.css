@@ -1,0 +1,230 @@
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18;
+}
+
+.navbar {
+    background-color: #333;
+}
+.navbar-brand {
+    font-weight: bold;
+    color: #fff;
+}
+.navbar-brand:hover {
+    color: #fff;
+}
+.nav-link {
+    color: #ccc !important;
+    margin-right: 15px;
+}
+.nav-link:hover {
+    color: #fff !important;
+}
+.btn-cta {
+    background-color: #ff4d4d;          
+    color: #fff;
+    border-radius: 20px;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+}
+.btn-cta:hover {
+    background-color: #e63946;
+}
+.hero-section {
+    background-image:url(https://wallpaperaccess.com/full/1607051.jpg); /* Ganti dengan gambar yang sesuai */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.hero-section p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.services-section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+.services-section h2 {
+    text-align: center;
+    color: #ff4d4d;
+    margin-bottom: 40px;
+}
+.service-card {
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    padding: 20px;
+    text-align: center;
+}
+.service-card:hover {
+    transform: translateY(-5px);
+}
+.features-section {
+    padding: 60px 0;
+    background-color: #333;
+    color: #fff;
+}
+.feature-icon {
+    font-size: 2.5rem;
+    color: #ff4d4d;
+    margin-bottom: 15px;
+}
+.about-section {
+    background-color: #f4f6f9;
+    padding: 60px 0;
+}
+.about-heading {
+    font-weight: bold;
+    color: #ff4d4d;
+}
+.about-content {
+    color: #333;
+    line-height: 1.8;
+}
+.vision-mission {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 8px;
+}
+/* Card Styling */
+.team-card {
+    border: none;
+    text-align: center;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+/* Circular Image */
+.team-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: -50px;
+    border: 5px solid #fff;
+    transition: transform 0.3s ease;
+}
+.team-card:hover img {
+    transform: scale(1.1);
+}
+/* Section Styling */
+.team-section h2 {
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.team-section .subheading {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    color: black;
+}
+.services-section {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+.service-heading {
+    font-weight: bold;
+    color: #ff4d4d;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.service-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.service-card:hover {
+    transform: translateY(-5px);
+}
+.service-icon {
+    font-size: 40px;
+    color: #ff4d4d;
+}
+.service-description {
+    color: #555;
+    line-height: 1.8;
+}
+.gallery-section {
+    padding-top: 60px;
+}
+.gallery-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.partners-section {
+    background-color: #f4f6f9;
+    padding: 60px 0;
+}
+.partners-heading {
+    font-weight: bold;
+    color: #ff4d4d;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.partner-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    background-color: white;
+    padding: 20px;
+}
+.partner-card:hover {
+    transform: translateY(-5px);
+}
+.partner-logo {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    margin: 0 auto;
+    display: block;
+}
+.partner-description {
+    color: #555;
+    line-height: 1.8;
+    text-align: center;
+    font-size: 0.9rem;
+}
+ /* Style dasar footer */
+ .footer {
+    background-color: #333;
+    color: #ffffff;
+    padding: 40px 0;
+}
+/* Ikon kontak */
+.footer .contact-info i {
+    font-size: 1.2rem;
+    color: #ffc107;
+    transition: color 0.3s ease;
+}
+/* Animasi hover ikon */
+.footer .contact-info i:hover {
+    color: #ffffff;
+}
+/* Teks dan ikon sosial media */
+.footer a {
+    color: #ffc107;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer a:hover {
+    color: #ffffff;
+}
